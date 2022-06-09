@@ -74,8 +74,8 @@ public class EditLead extends SelenuimBase {
 
 	@Given("Verify title of the page")
 	public void verifyTitle() {
-		//verifyTitle("View Lead | opentaps CRM");
-		String title=getDriver().getTitle();
+		// verifyTitle("View Lead | opentaps CRM");
+		String title = getDriver().getTitle();
 		Assert.assertEquals(title, "View Lead | opentaps CRM");
 	}
 
@@ -96,9 +96,9 @@ public class EditLead extends SelenuimBase {
 
 	@Given("Confirm the changed name appears")
 	public void verifyCompanyName() {
-		String value1="TCS";
-		String value2=getDriver().findElement(By.cssSelector("#viewLead_companyName_sp")).getText();
-		//Assert.assertTrue(value2.contains(value1),"Failure message");
-		Assert.assertEquals(value2.contains(value1),"Failure message");
+		String value1 = "TCS";
+		String value2 = getDriver().findElement(By.cssSelector("#viewLead_companyName_sp")).getText();
+		// Assert.assertTrue(value2.contains(value1),"Failure message");
+		Assert.assertEquals(value2.contains(value1), "Failure message");
 	}
 }
