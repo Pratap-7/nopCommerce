@@ -4,7 +4,7 @@ import org.testng.annotations.DataProvider;
 
 import io.cucumber.testng.CucumberOptions;
 import nopCommerce.Utils.ProjectSpecifiedMethods;
-@CucumberOptions(features="src/test/java/nopCommerce/Feature",
+@CucumberOptions(features="src/test/java/nopCommerce/Feature/Duplicate.feature",
 glue="nopCommerce.StepDefination",
 monochrome=true)
 public class TestRunner extends ProjectSpecifiedMethods {
